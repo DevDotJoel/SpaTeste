@@ -34,6 +34,6 @@ async function createProduct(){
         },
         body:JSON.stringify(product)
     })
-    const data= await response.text();
-    console.log(data)
+    await response.text();
+    window.location.href = "http://localhost:3000/#products";
 }
